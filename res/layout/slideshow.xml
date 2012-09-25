@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/overlay"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+	
+	
+	<LinearLayout 
+	    android:id="@+id/fullimage_view"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:gravity="center_vertical">
+		
+		<at.zone.madeleine.slideshow.MdlGallery 
+		    android:id="@+id/gallery_images"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content" />
+		    
+
+		    
+    </LinearLayout>
+    
+
+    <ProgressBar android:id="@+android:id/progress_ring"
+      	android:layout_width="wrap_content"
+      	android:layout_height="wrap_content"
+      	android:layout_gravity="center"
+      	android:visibility="invisible"/>
+    
+	
+	<LinearLayout 
+	    android:id="@+id/thumbnail_view"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:gravity="bottom">
+	        
+		<Gallery 
+		    android:id="@+id/thumbnails"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content" />
+		
+    </LinearLayout>			
+
+	
+</FrameLayout>
+       
